@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Student Portal Elite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="auth-page">
+    <div class="mesh-bg"></div>
+
+    <!-- Premium Background Elements -->
+    <div class="blob" style="bottom: -10%; left: -5%; background: var(--accent); opacity: 0.15; animation-delay: -3s;">
+    </div>
+    <div class="blob" style="top: -10%; right: -5%; background: var(--primary); opacity: 0.15; animation-delay: -7s;">
+    </div>
+
+    <main class="auth-container">
+        <div class="auth-card" style="max-width: 720px;">
+            <header style="text-align: center; margin-bottom: 3rem;" class="fade-in">
+                <div class="logo-box"
+                    style="width: 4.5rem; height: 4.5rem; background: var(--secondary); border-radius: 1.5rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 1px solid var(--border); box-shadow: 0 15px 30px -5px rgba(0,0,0,0.4);">
+                    <i data-lucide="sparkles" style="width: 2.25rem; height: 2.25rem; color: var(--accent);"></i>
+                </div>
+                <h1 class="font-black text-gradient"
+                    style="font-size: 2.75rem; letter-spacing: -0.05em; line-height: 1.1; margin-bottom: 0.5rem;">Join
+                    the Excellence</h1>
+                <p class="text-muted" style="font-weight: 600;">Create your elite student identity.</p>
+            </header>
+
+            <div class="glass-card glass-card-hover fade-in" style="animation-delay: 0.2s;">
+                <div class="premium-accent-bar"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--accent), var(--primary));">
+                </div>
+
+                <form id="registerForm">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div class="input-group">
+                            <label class="font-outfit font-bold"
+                                style="display: block; margin-bottom: 0.75rem; margin-left: 0.5rem; font-size: 0.8rem; color: var(--muted-foreground); text-transform: uppercase;">Full
+                                Legal Name</label>
+                            <div style="position: relative;">
+                                <input type="text" id="name" class="input-field" placeholder="John Wick" required>
+                                <i data-lucide="user" class="input-icon" style="width: 1.4rem; height: 1.4rem;"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="font-outfit font-bold"
+                                style="display: block; margin-bottom: 0.75rem; margin-left: 0.5rem; font-size: 0.8rem; color: var(--muted-foreground); text-transform: uppercase;">University
+                                Mail</label>
+                            <div style="position: relative;">
+                                <input type="email" id="email" class="input-field" placeholder="john@university.edu"
+                                    required>
+                                <i data-lucide="mail" class="input-icon" style="width: 1.4rem; height: 1.4rem;"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="font-outfit font-bold"
+                                style="display: block; margin-bottom: 0.75rem; margin-left: 0.5rem; font-size: 0.8rem; color: var(--muted-foreground); text-transform: uppercase;">Identity
+                                / Roll No.</label>
+                            <div style="position: relative;">
+                                <input type="text" id="roll" class="input-field" placeholder="S2024001" required>
+                                <i data-lucide="hash" class="input-icon" style="width: 1.4rem; height: 1.4rem;"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="font-outfit font-bold"
+                                style="display: block; margin-bottom: 0.75rem; margin-left: 0.5rem; font-size: 0.8rem; color: var(--muted-foreground); text-transform: uppercase;">Primary
+                                Major</label>
+                            <div style="position: relative;">
+                                <input type="text" id="course" class="input-field" placeholder="Computer Economics"
+                                    required>
+                                <i data-lucide="book-open" class="input-icon"
+                                    style="width: 1.4rem; height: 1.4rem;"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="font-outfit font-bold"
+                                style="display: block; margin-bottom: 0.75rem; margin-left: 0.5rem; font-size: 0.8rem; color: var(--muted-foreground); text-transform: uppercase;">Current
+                                Semester</label>
+                            <div style="position: relative;">
+                                <input type="text" id="semester" class="input-field" placeholder="1st Semester"
+                                    required>
+                                <i data-lucide="calendar" class="input-icon" style="width: 1.4rem; height: 1.4rem;"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="font-outfit font-bold"
+                                style="display: block; margin-bottom: 0.75rem; margin-left: 0.5rem; font-size: 0.8rem; color: var(--muted-foreground); text-transform: uppercase;">Security
+                                Key</label>
+                            <div style="position: relative;">
+                                <input type="password" id="password" class="input-field" placeholder="••••••••"
+                                    required>
+                                <i data-lucide="lock" class="input-icon" style="width: 1.4rem; height: 1.4rem;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1.5rem; margin-top: 2rem;">
+                        <button type="submit" class="btn-primary" id="regBtn" style="flex: 2;">
+                            <span>Initialize Elite Protocol</span>
+                            <i data-lucide="chevron-right" style="width: 1.5rem; height: 1.5rem;"></i>
+                        </button>
+                        <button type="button" class="btn-outline" style="flex: 1;"
+                            onclick="window.location.href='login.html'">
+                            <span>Sign In</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <p style="text-align: center; margin-top: 2.5rem;" class="text-muted fade-in">
+                By initializing, you agree to the <a href="#"
+                    style="color: var(--primary); font-weight: 700; text-decoration: none;">Academic Excellence
+                    Protocol</a>.
+            </p>
+        </div>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script>
+        lucide.createIcons();
+
+        document.getElementById('registerForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const userData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                rollNumber: document.getElementById('roll').value,
+                course: document.getElementById('course').value,
+                semester: document.getElementById('semester').value,
+                avatar: `https://api.dicebear.com/7.x/avataaars/svg?seed=${document.getElementById('name').value}`
+            };
+
+            const btn = document.getElementById('regBtn');
+            const original = btn.innerHTML;
+            btn.innerHTML = `<div class="loader"></div><span>Generating Identity...</span>`;
+            btn.disabled = true;
+
+            await new Promise(r => setTimeout(r, 2000));
+
+            if (Auth.register(userData)) {
+                btn.innerHTML = `<span>Protocol Success</span>`;
+                btn.style.background = '#10b981';
+                setTimeout(() => window.location.href = 'index.html', 800);
+            } else {
+                btn.innerHTML = original;
+                btn.disabled = false;
+                alert('Registration failed.');
+            }
+        });
+    </script>
+
+    <style>
+        .loader {
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</body>
+
+</html>

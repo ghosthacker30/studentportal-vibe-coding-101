@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Elite Student Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="welcome-page">
+    <div class="mesh-bg"></div>
+
+    <div class="blob"
+        style="top: -20%; left: -10%; background: var(--primary); width: 60rem; height: 60rem; opacity: 0.1;"></div>
+    <div class="blob"
+        style="bottom: -20%; right: -10%; background: var(--accent); width: 60rem; height: 60rem; opacity: 0.1; animation-delay: -5s;">
+    </div>
+
+    <nav
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100px; display: flex; align-items: center; justify-content: space-between; padding: 0 4rem; z-index: 100; backdrop-filter: blur(10px);">
+        <div class="logo-box" style="display: flex; align-items: center; gap: 1rem;">
+            <div
+                style="width: 3.5rem; height: 3.5rem; background: var(--secondary); border-radius: 1.25rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border);">
+                <i data-lucide="graduation-cap" style="width: 1.75rem; height: 1.75rem; color: var(--primary);"></i>
+            </div>
+            <span class="font-outfit font-black"
+                style="font-size: 1.75rem; color: white; letter-spacing: -0.04em;">ElitePortal</span>
+        </div>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+            <a href="login.html" class="btn-outline"
+                style="width: auto; padding: 0.75rem 1.5rem; font-size: 0.9rem; border-radius: 1rem; background: rgba(255,255,255,0.05);">Sign
+                In</a>
+            <a href="register.html" class="btn-primary"
+                style="width: auto; padding: 0.75rem 1.5rem; font-size: 0.9rem;">Initialize Access</a>
+        </div>
+    </nav>
+
+    <main style="padding-top: 15vh; overflow: hidden;">
+        <!-- Hero Section -->
+        <section style="max-width: 1400px; margin: 0 auto; text-align: center; padding: 0 2rem;">
+            <div class="fade-in">
+                <span class="font-outfit font-bold"
+                    style="display: inline-block; padding: 0.5rem 1.5rem; background: var(--secondary); border-radius: 99px; font-size: 0.75rem; color: var(--primary); border: 1px solid var(--border); text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 2rem;">Next-Gen
+                    Student Ecosystem</span>
+                <h1 class="font-black text-gradient"
+                    style="font-size: clamp(3rem, 10vw, 7rem); letter-spacing: -0.06em; line-height: 0.9; margin-bottom: 2rem;">
+                    Academic Excellence,<br>Redefined.</h1>
+                <p class="text-muted"
+                    style="max-width: 700px; margin: 0 auto 3.5rem; font-size: 1.25rem; font-weight: 500; line-height: 1.6;">
+                    A centralized, high-performance portal designed for elite students to manage, track, and dominate
+                    their academic journey with high-end visuals and real-time data.</p>
+
+                <div style="display: flex; align-items: center; justify-content: center; gap: 1.5rem;">
+                    <a href="register.html" class="btn-primary"
+                        style="width: auto; padding: 1.25rem 3rem; font-size: 1.1rem; border-radius: 1.5rem;">
+                        <span>Get Started for Free</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="#features" class="btn-outline"
+                        style="width: auto; padding: 1.25rem 3rem; font-size: 1.1rem; border-radius: 1.5rem; background: rgba(255,255,255,0.03);">
+                        <span>Explore Systems</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Preview Image Context Mock -->
+            <div class="fade-in" style="margin-top: 8rem; position: relative; animation-delay: 0.4s;">
+                <div class="glass-card"
+                    style="padding: 1rem; border-radius: 2rem; max-width: 1000px; margin: 0 auto; transform: perspective(1000px) rotateX(10deg); box-shadow: 0 50px 100px -20px rgba(0,0,0,0.8); border: 1px solid var(--border); background: var(--secondary);">
+                    <div
+                        style="height: 500px; background: #000; border-radius: 1.5rem; overflow: hidden; display: flex; align-items: center; justify-content: center; position: relative;">
+                        <div class="mesh-bg" style="opacity: 0.3;"></div>
+                        <div style="text-align: center; z-index: 1;">
+                            <i data-lucide="layout-dashboard"
+                                style="width: 5rem; height: 5rem; color: var(--primary); opacity: 0.5; margin-bottom: 2rem;"></i>
+                            <p class="font-outfit font-black" style="font-size: 2rem; opacity: 0.5;">LIVE DASHBOARD
+                                INTERFACE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section id="features" style="max-width: 1200px; margin: 15rem auto 5rem; padding: 0 2rem;">
+            <h2 class="font-black"
+                style="font-size: 3.25rem; text-align: center; margin-bottom: 2rem; letter-spacing: -0.04em;">Elite
+                Capabilities.</h2>
+            <p class="text-muted" style="text-align: center; margin-bottom: 5rem; font-size: 1.1rem;">Click a system
+                module below to initialize a live preview.</p>
+
+            <div class="grid-3">
+                <div class="glass-card glass-card-hover feature-card" id="feat-crud"
+                    style="padding: 3rem; cursor: pointer; position: relative;">
+                    <div
+                        style="width: 4rem; height: 4rem; background: var(--primary-glow); border-radius: 1.25rem; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                        <i data-lucide="cpu" style="color: var(--primary);"></i>
+                    </div>
+                    <h3 class="font-outfit font-black mb-4" style="font-size: 1.5rem;">Total CRUD Freedom</h3>
+                    <p class="text-muted">Define your own reality. Create custom subjects that sync instantly across the
+                        entire portal.</p>
+                    <div class="click-indicator"
+                        style="position: absolute; bottom: 1.5rem; right: 1.5rem; color: var(--primary); font-size: 0.7rem; font-weight: 900; letter-spacing: 0.1em; opacity: 0.6;">
+                        EXPLORE →</div>
+                </div>
+
+                <div class="glass-card glass-card-hover feature-card" id="feat-xp"
+                    style="padding: 3rem; cursor: pointer; position: relative;">
+                    <div
+                        style="width: 4rem; height: 4rem; background: var(--accent-glow); border-radius: 1.25rem; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                        <i data-lucide="award" style="color: var(--accent);"></i>
+                    </div>
+                    <h3 class="font-outfit font-black mb-4" style="font-size: 1.5rem;">Gamified Rank Stats</h3>
+                    <p class="text-muted">Level up your student identity. Earn XP for every interaction and dominate the
+                        leaderboard.</p>
+                    <div class="click-indicator"
+                        style="position: absolute; bottom: 1.5rem; right: 1.5rem; color: var(--accent); font-size: 0.7rem; font-weight: 900; letter-spacing: 0.1em; opacity: 0.6;">
+                        EXPLORE →</div>
+                </div>
+
+                <div class="glass-card glass-card-hover feature-card" id="feat-perf"
+                    style="padding: 3rem; cursor: pointer; position: relative;">
+                    <div
+                        style="width: 4rem; height: 4rem; background: rgba(255,255,255,0.05); border-radius: 1.25rem; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                        <i data-lucide="zap" style="color: white;"></i>
+                    </div>
+                    <h3 class="font-outfit font-black mb-4" style="font-size: 1.5rem;">Vanilla Velocity</h3>
+                    <p class="text-muted">Zero dependency architecture. Lightning-fast response times and 60FPS fluid
+                        animations.</p>
+                    <div class="click-indicator"
+                        style="position: absolute; bottom: 1.5rem; right: 1.5rem; color: white; font-size: 0.7rem; font-weight: 900; letter-spacing: 0.1em; opacity: 0.6;">
+                        EXPLORE →</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Preview Section -->
+        <section id="system-preview" style="max-width: 1000px; margin: 0 auto 15rem; padding: 0 2rem; display: none;">
+            <div class="glass-card" style="padding: 4rem; border: 2px solid var(--primary-glow); position: relative;">
+                <div id="preview-content" class="fade-in">
+                    <!-- Content managed by JS -->
+                </div>
+                <button onclick="document.getElementById('system-preview').style.display='none'"
+                    style="position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; color: var(--muted-foreground); cursor: pointer;">
+                    <i data-lucide="x" style="width: 1.25rem;"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="padding: 8rem 0; border-top: 1px solid var(--border); text-align: center;">
+            <div class="logo-box"
+                style="display: flex; align-items: center; gap: 1rem; justify-content: center; margin-bottom: 2rem;">
+                <i data-lucide="graduation-cap" style="width: 2rem; color: var(--primary);"></i>
+                <span class="font-outfit font-black" style="font-size: 1.5rem;">ElitePortal</span>
+            </div>
+            <p class="text-muted" style="font-size: 0.9rem;">&copy; 2026 Elite Student Protocol. Built for Hackathon
+                Excellence.</p>
+        </footer>
+    </main>
+
+    <script>
+        lucide.createIcons();
+
+        // Feature Toggle Logic
+        const previews = {
+            'feat-crud': `
+                <div style="display: flex; flex-direction: column; gap: 2rem;">
+                    <h3 class="font-outfit font-black" style="font-size: 2.5rem; color: var(--primary);">System: Dynamic Registry</h3>
+                    <p class="text-muted" style="font-size: 1.1rem;">Live demonstration of the user-defined course protocol. Define your own academic reality with zero server latency.</p>
+                    <div class="glass-card" style="background: rgba(0,0,0,0.3); border: 1px dashed var(--primary-glow); padding: 2rem;">
+                        <p class="font-outfit font-bold" style="color: var(--primary); font-size: 0.8rem; margin-bottom: 1rem;">MOCK INTERFACE</p>
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <div style="flex: 1; height: 1.25rem; background: var(--secondary); border-radius: 4px;"></div>
+                            <div style="width: 80px; height: 1.25rem; background: var(--primary); border-radius: 4px;"></div>
+                        </div>
+                        <div style="margin-top: 1rem; height: 3rem; background: var(--secondary); border-radius: 8px; border: 1px solid var(--border); display: flex; align-items: center; padding: 0 1rem; color: var(--muted-foreground); font-size: 0.8rem;">[ Course ID: ELT-404 | Title: Quantum Vibe Coding ]</div>
+                    </div>
+                    <button class="btn-primary" style="width: auto; align-self: flex-start;" onclick="window.location.href='register.html'">Initialize Real Instance</button>
+                </div>
+            `,
+            'feat-xp': `
+                <div style="display: flex; flex-direction: column; gap: 2rem;">
+                    <h3 class="font-outfit font-black" style="font-size: 2.5rem; color: var(--accent);">System: Gamification 2.0</h3>
+                    <p class="text-muted" style="font-size: 1.1rem;">Be rewarded for every academic milestone. Watch your XP scalar rise as you progress through your curriculum.</p>
+                    <div style="text-align: center; padding: 2rem;">
+                         <p class="font-outfit font-black" style="font-size: 4rem; color: var(--accent); line-height: 1;">RANK: ELITE</p>
+                         <div style="height: 12px; background: var(--secondary); border-radius: 99px; margin-top: 2rem; overflow: hidden; border: 1px solid var(--border);">
+                             <div style="width: 75%; height: 100%; background: linear-gradient(90deg, var(--accent), var(--primary)); animation: shimmer 2s infinite;"></div>
+                         </div>
+                         <p class="font-bold mt-4" style="color: var(--muted-foreground); font-size: 0.8rem;">750 / 1000 XP TO NEXT PROTOCOL</p>
+                    </div>
+                </div>
+            `,
+            'feat-perf': `
+                <div style="display: flex; flex-direction: column; gap: 2rem;">
+                    <h3 class="font-outfit font-black" style="font-size: 2.5rem; color: white;">System: Vanilla Velocity</h3>
+                    <p class="text-muted" style="font-size: 1.1rem;">Zero frameworks. Zero bloat. 100% Performance. Experience a portal that moves at the speed of thought.</p>
+                    <div class="grid-3" style="text-align: center;">
+                        <div class="glass-card"><p class="font-black" style="font-size: 2.5rem; color: #10b981;">100</p><p class="text-muted font-bold" style="font-size:0.7rem;">Lighthouse</p></div>
+                        <div class="glass-card"><p class="font-black" style="font-size: 2.5rem; color: #10b981;">< 0.1s</p><p class="text-muted font-bold" style="font-size:0.7rem;">LCP</p></div>
+                        <div class="glass-card"><p class="font-black" style="font-size: 2.5rem; color: #10b981;">0ms</p><p class="text-muted font-bold" style="font-size:0.7rem;">JS JITTER</p></div>
+                    </div>
+                </div>
+            `
+        };
+
+        const featureCards = document.querySelectorAll('.feature-card');
+        const previewSection = document.getElementById('system-preview');
+        const previewContent = document.getElementById('preview-content');
+
+        featureCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const id = card.id;
+                previewContent.innerHTML = previews[id];
+                previewSection.style.display = 'block';
+                lucide.createIcons();
+
+                // Smooth scroll to preview
+                previewSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                // Visual feedback on card
+                featureCards.forEach(c => c.style.borderColor = 'var(--border)');
+                card.style.borderColor = id === 'feat-crud' ? 'var(--primary)' : (id === 'feat-xp' ? 'var(--accent)' : 'white');
+            });
+        });
+
+        // Simple intersection observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.glass-card').forEach(card => observer.observe(card));
+    </script>
+</body>
+
+</html>
